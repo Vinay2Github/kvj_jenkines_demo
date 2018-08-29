@@ -36,14 +36,5 @@ agent any
         }
 
 
-        stage ('Build container') {
-            steps {
-                sh '''
-                    pwd
-                    make build -e "NAME=$IMAGE_ID" "VERSION=${GIT_COMMIT}"
-                   '''
-            }
-        }
-
     }
 }
