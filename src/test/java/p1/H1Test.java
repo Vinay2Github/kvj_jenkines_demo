@@ -16,7 +16,7 @@ public class H1Test {
 
        String op = testH1.helloStr(" KVJ1") ;
 
-        Assert.assertEquals(op,"Hello KVJ1");
+        Assert.assertEquals(op,"HelloKVJ1");
 
 
     }
