@@ -29,11 +29,6 @@ agent any
                 sh './mvnw test'
             }
         }
-        stage ('Build JAR and upload to nexus') {
-            steps {
-                sh './mvnw -Dmaven.test.failure.ignore=false -Dsettings.security=settings-security.xml -s settings.xml clean install deploy'
-            }
-        }
 
 
     }
