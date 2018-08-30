@@ -30,6 +30,10 @@ agent any
             }
         }
 
-
-    }
+         stage ('Build JAR ') {
+                    steps {
+                        sh './mvnw -Dmaven.test.failure.ignore=false clean install'
+                    }
+                }
+ }
 }
